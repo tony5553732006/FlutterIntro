@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/pages/demo/basic/basic_widget.dart';
+import 'package:flutter_intro/pages/demo/multi/multi_child_widget.dart';
 import 'package:flutter_intro/pages/demo/single/single_child_widget.dart';
 import 'package:flutter_intro/routes.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const SingleChildWidgetPage(),
+      home: const MultiChildWidgetPage(),
       routes: routes,
     );
   }

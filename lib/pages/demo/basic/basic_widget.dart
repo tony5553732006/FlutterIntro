@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_button.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_image.dart';
-import 'package:flutter_intro/pages/demo_container.dart';
+import 'package:flutter_intro/pages/demo/single/demo_container.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_icon.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_text.dart';
 
