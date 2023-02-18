@@ -6,11 +6,12 @@ class GridViewDemo extends StatelessWidget {
 
   Widget _buildGridView() {
     return GridView.builder(
+      scrollDirection: Axis.vertical,
       padding: const EdgeInsets.all(0),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        childAspectRatio: 1,
-        mainAxisSpacing: 0,
+        childAspectRatio: 2,
+        mainAxisSpacing: 20,
         crossAxisSpacing: 0,
       ),
       itemBuilder: (context, index) {

@@ -6,7 +6,7 @@ class PaddingDemo extends StatelessWidget {
 
   Widget _buildPadding() {
     return const Padding(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(50),
       child: Text('Hello World'),
     );
   }

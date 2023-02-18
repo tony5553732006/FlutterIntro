@@ -7,6 +7,7 @@ class SingleChildScrollViewDemo extends StatelessWidget {
   Widget _buildScrollView() {
     return Scrollbar(
       isAlwaysShown: false,
+      thickness: 10,
       child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         reverse: false,

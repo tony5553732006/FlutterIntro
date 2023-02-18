@@ -5,25 +5,30 @@ class RowDemo extends StatelessWidget {
   static const routeName = "/demo_row";
 
   Widget _buildRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          color: Colors.red,
-          width: 100,
-          height: 100,
-        ),
-        Container(
-          color: Colors.yellow,
-          width: 100,
-          height: 100,
-        ),
-        Container(
-          color: Colors.green,
-          width: 100,
-          height: 100,
-        )
-      ],
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.yellow,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.green,
+            width: 100,
+            height: 100,
+          )
+        ],
+      ),
     );
   }
 

@@ -41,17 +41,17 @@ class ScaffoldDemo extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile( // 子项
+            ListTile( // 子項
               leading: const Icon(Icons.settings),
               title: const Text("設定"),
               onTap: () {},
             ),
-            ListTile( // 子项
+            ListTile( // 子項
               leading: const Icon(Icons.person),
               title: const Text("個人"),
               onTap: () {},
             ),
-            ListTile( // 子项
+            ListTile( // 子項
               leading: const Icon(Icons.feedback),
               title: const Text("反饋"),
               onTap: () {},

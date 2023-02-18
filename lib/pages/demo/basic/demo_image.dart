@@ -9,24 +9,26 @@ class ImageDemo extends StatelessWidget {
 
   Widget _buildAssetImage() {
     // fit 屬性用法: https://www.jianshu.com/p/946e09ee3dd8
-    return const Image(
-      width: 200,
-      height: 200,
-      fit: BoxFit.fill,
-      image: AssetImage('assets/images/demo_image1.jpg'),
-    );
-    // return Image.asset(
-    //   'assets/images/demo_image1.jpg',
+    // return const Image(
+    //   image: AssetImage('assets/images/demo_image1.jpg'),
     //   width: 200,
     //   height: 200,
     //   fit: BoxFit.fill,
     // );
+
+    return Image.asset(
+      'assets/images/demo_image1.jpg',
+      width: 200,
+      height: 200,
+      fit: BoxFit.fill,
+    );
   }
 
   Widget _buildNetworkImage() {
     return Image.network(
       'https://kx2.zyosoft.cn/22081215544308170828_1024X1024.jpg',
       width: 200,
+      height: 200,
       loadingBuilder: (BuildContext context, Widget child,
           ImageChunkEvent? loadingProgress) {
         if (loadingProgress == null) return child;
@@ -42,12 +44,6 @@ class ImageDemo extends StatelessWidget {
   }
 
   Widget _buildLocalImage() {
-    // return Image.file(
-    //   File('/storage/emulated/0/Download/demo_image2.jpg'),
-    //   width: 200,
-    //   height: 200,
-    // );
-
     // 取得儲存空間存取權限
     return FutureBuilder<bool>(
         future: _requestPermission(),

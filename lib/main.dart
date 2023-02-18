@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/pages/demo/basic/basic_widget.dart';
+import 'package:flutter_intro/pages/demo/first_page.dart';
 import 'package:flutter_intro/pages/demo/multi/multi_child_widget.dart';
 import 'package:flutter_intro/pages/demo/single/single_child_widget.dart';
 import 'package:flutter_intro/routes.dart';
@@ -17,11 +20,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
         brightness: Brightness.light,
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const MultiChildWidgetPage(),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const BasicWidgetPage(),
+      // home: const FirstPage(),
       routes: routes,
     );
   }
@@ -65,13 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back),
-        ),
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-        ],
       ),
       body: Center(
         child: Column(

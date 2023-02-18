@@ -10,8 +10,8 @@ class ContainerDemo extends StatelessWidget {
       width: 200,
       height: 150,
       // alignment: Alignment.center,
-      margin: const EdgeInsets.all(20),
-      padding: const EdgeInsets.only(top: 10, left: 10),
+      margin: const EdgeInsets.all(0),
+      padding: const EdgeInsets.only(top: 0, left: 0),
       child: const Text('Hello World'),
     );
   }
@@ -23,13 +23,13 @@ class ContainerDemo extends StatelessWidget {
       margin: const EdgeInsets.fromLTRB(25, 25, 0, 0),
       alignment: Alignment.center,
       decoration: BoxDecoration(
+        image: const DecorationImage(
+            image: AssetImage('assets/images/demo_image1.jpg')),
           border: Border.all(
             color: Colors.yellow,
             width: 5,
           ),
           borderRadius: const BorderRadius.all(Radius.circular(20)),
-          image: const DecorationImage(
-              image: AssetImage('assets/images/demo_image1.jpg')),
           boxShadow: const [
             BoxShadow(
                 color: Colors.black,
@@ -38,7 +38,7 @@ class ContainerDemo extends StatelessWidget {
             )
           ]
       ),
-      // transform: Matrix4.rotationZ(.5),
+      transform: Matrix4.rotationZ(.5),
     );
   }
 

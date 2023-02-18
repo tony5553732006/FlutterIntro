@@ -10,8 +10,9 @@ class ButtonDemo extends StatelessWidget {
       onPressed: () {
         Fluttertoast.showToast(msg: 'IconButton clicked');
       },
-      icon: const Icon(Icons.add),
-      color: Colors.blue,
+      icon: const Icon(Icons.add_a_photo_sharp),
+      color: Colors.green,
+      iconSize: 50,
     );
   }
 
@@ -21,6 +22,9 @@ class ButtonDemo extends StatelessWidget {
         Fluttertoast.showToast(msg: 'TextButton clicked');
       },
       child: const Text('按鈕'),
+      style: TextButton.styleFrom(
+        backgroundColor: Colors.green
+      ),
     );
   }
 
@@ -30,12 +34,12 @@ class ButtonDemo extends StatelessWidget {
         Fluttertoast.showToast(msg: 'OutlinedButton clicked');
       },
       child: const Text('按鈕'),
-      // style: OutlinedButton.styleFrom(
-      //     side: const BorderSide(width: 5.0, color: Colors.green),
-      //     shape: RoundedRectangleBorder(
-      //       borderRadius: BorderRadius.circular(10.0),
-      //     ),
-      //     backgroundColor: Colors.white),
+      style: OutlinedButton.styleFrom(
+          side: const BorderSide(width: 5.0, color: Colors.green),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          backgroundColor: Colors.orange),
     );
   }
 
@@ -62,7 +66,11 @@ class ButtonDemo extends StatelessWidget {
   }
 
   Widget _buildInkWell() {
-    return InkWell(
+    return GestureDetector(
+      // onLongPress: ,
+      onLongPress: () {
+        Fluttertoast.showToast(msg: 'onLongPress');
+      },
       onTap: () {
         Fluttertoast.showToast(msg: '任意widget添加點擊事件');
       },

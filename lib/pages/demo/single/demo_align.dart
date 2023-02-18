@@ -6,7 +6,9 @@ class AlignDemo extends StatelessWidget {
 
   Widget _buildAlign() {
     return const Align(
-      alignment: Alignment.bottomCenter,
+      // widthFactor: 1,
+      // heightFactor: 1,
+      alignment: Alignment.bottomRight,
       child: Text('Hello World'),
     );
   }

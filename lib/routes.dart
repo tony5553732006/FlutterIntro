@@ -2,6 +2,7 @@
 import 'package:flutter_intro/pages/demo/basic/basic_widget.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_button.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_image.dart';
+import 'package:flutter_intro/pages/demo/first_page.dart';
 import 'package:flutter_intro/pages/demo/multi/demo_column.dart';
 import 'package:flutter_intro/pages/demo/multi/demo_gridview.dart';
 import 'package:flutter_intro/pages/demo/multi/demo_listview.dart';
@@ -16,6 +17,7 @@ import 'package:flutter_intro/pages/demo/single/single_child_widget.dart';
 import 'package:flutter_intro/pages/demo/single/demo_container.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_icon.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_text.dart';
+import 'package:flutter_intro/pages/second_page.dart';
 
 var routes = {
   //基礎組件範例
@@ -38,4 +40,7 @@ var routes = {
   RowDemo.routeName: (context) => const RowDemo(),
   ListViewDemo.routeName: (context) => const ListViewDemo(),
   GridViewDemo.routeName: (context) => const GridViewDemo(),
+  //路由範例
+  FirstPage.routeName: (context) => const FirstPage(),
+  SecondPage.routeName: (context) => const SecondPage(),
 };

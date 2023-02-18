@@ -9,9 +9,9 @@ class TextDemo extends StatelessWidget {
     return const Text(
       'Hello World!!',
       style: TextStyle(
-        color: Colors.black,
+        color: Colors.green,
         fontSize: Constants.textSize_18,
-        // fontFamily: 'commonTextStyle'
+        fontFamily: 'commonTextStyle'
       ),
     );
   }

@@ -5,16 +5,16 @@ import 'package:flutter_intro/pages/demo/multi/demo_listview.dart';
 import 'package:flutter_intro/pages/demo/multi/demo_row.dart';
 import 'package:flutter_intro/pages/demo/multi/demo_scaffold.dart';
 
+//多子元件組件範例
 class MultiChildWidgetPage extends StatefulWidget {
   const MultiChildWidgetPage({Key? key}) : super(key: key);
-  static const routeName = "multiChildWidget";
+  static const routeName = "/multiChildWidget";
 
   @override
   _MultiChildWidgetPageState createState() => _MultiChildWidgetPageState();
 }
 
 class _MultiChildWidgetPageState extends State<MultiChildWidgetPage> {
-
   void onBtnClicked(String routeName) {
     Navigator.pushNamed(context, routeName);
   }
@@ -23,7 +23,7 @@ class _MultiChildWidgetPageState extends State<MultiChildWidgetPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Single Child Widget Demo'),
+        title: const Text('Multi Child Widget Demo'),
       ),
       body: ListView(
         scrollDirection: Axis.vertical,

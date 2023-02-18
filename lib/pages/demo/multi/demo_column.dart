@@ -5,26 +5,31 @@ class ColumnDemo extends StatelessWidget {
   static const routeName = "/demo_column";
 
   Widget _buildColumn() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          color: Colors.red,
-          width: 100,
-          height: 100,
-        ),
-        Container(
-          color: Colors.yellow,
-          width: 100,
-          height: 100,
-        ),
-        Container(
-          color: Colors.green,
-          width: 100,
-          height: 100,
-        )
-      ],
+    //介紹 https://ithelp.ithome.com.tw/articles/10218513
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.yellow,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.green,
+            width: 100,
+            height: 100,
+          )
+        ],
+      ),
     );
   }
 

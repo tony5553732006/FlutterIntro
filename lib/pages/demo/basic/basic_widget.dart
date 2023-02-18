@@ -5,6 +5,7 @@ import 'package:flutter_intro/pages/demo/single/demo_container.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_icon.dart';
 import 'package:flutter_intro/pages/demo/basic/demo_text.dart';
 
+//基礎組件範例
 class BasicWidgetPage extends StatefulWidget {
   const BasicWidgetPage({Key? key}) : super(key: key);
   static const routeName = "/basicWidget";
